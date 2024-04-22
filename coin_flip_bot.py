@@ -92,7 +92,7 @@ async def callback_inline(call):
         back_button = types.InlineKeyboardButton(text="🔙 Вернуться в главное меню", callback_data="subscriber")
         keyboard.add(back_button)
         await bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.id)
-        await bot.send_photo(chat_id=call.message.chat.id,photo=open('resources/instruction.JPG', 'rb') , caption="Бот основан и обучен на кластере нейросети 🖥 [bitsGap].\n\n"
+        await bot.send_photo(chat_id=call.message.chat.id,photo=open('resources/instruction.PNG', 'rb') , caption="Бот основан и обучен на кластере нейросети 🖥 [bitsGap].\n\n"
                                                                   "Для тренировки бота было сыграно 🎰10.000+ игр.\n"
                                                                   "В данный момент пользователи бота успешно делают в день 15-25% от своего 💸 капитала!\n\n"
                                                                   "На текущий момент бот по сей день проходит проверки и  исправления! Точность бота составляет 97%!\n\n"
