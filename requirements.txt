@@ -1,0 +1,6 @@
+python-dotenv
+asyncio
+telebot
+aiosqlite
+sqlalchemy
+aiohttp
