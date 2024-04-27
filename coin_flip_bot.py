@@ -63,9 +63,9 @@ async def callback_inline(call):
         get_signal_button = types.InlineKeyboardButton(text="🪙 Atirar uma moeda 🪙", callback_data="get_signal")
         keyboard.add(register_button, instruction_button, get_signal_button)
         await bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.id)
-        await bot.send_message(chat_id=call.message.chat.id, text="Bem-vindo ao 🟡YE KAZINO COIN FLIP🟡!\n"
-                               "🪙 Coin Flip é um jogo que recria o processo de lançamento de uma moeda, pedindo ao jogador que escolha entre cara e coroa."
-                               "Se você adivinhar com sucesso o lado da moeda, o jogador pode esperar uma vitória na faixa de x1,1 a x2000. Se aparecer o BANCO, o jogador pode ganhar um jackpot de até 240.000 moedas!"
+        await bot.send_message(chat_id=call.message.chat.id, text="Bem-vindo ao 🟡YE KAZINO COIN FLIP🟡!\n\n"
+                               "🪙 Coin Flip é um jogo que recria o processo de lançamento de uma moeda, pedindo ao jogador que escolha entre cara e coroa.\n\n"
+                               "Se você adivinhar com sucesso o lado da moeda, o jogador pode esperar uma vitória na faixa de x1,1 a x2000. Se aparecer o BANCO, o jogador pode ganhar um jackpot de até 240.000 moedas!\n\n\n"
                                "Nosso jogo é desenvolvido utilizando tecnologias avançadas da inteligência artificial BitsGap, proporcionando uma análise única do jogo e uma sensação de presença como uma moeda no processo Coin Flip.",
                          reply_markup=keyboard
                          )
