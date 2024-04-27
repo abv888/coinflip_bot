@@ -77,7 +77,7 @@ async def callback_inline(call):
         keyboard.add(register_button, back_button)
         await bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.id)
         await bot.send_photo(chat_id=call.message.chat.id,
-                             photo=open('resources/registration.JPG', 'rb'),
+                             photo=open('resources/registration.jpg', 'rb'),
                          caption="🟡 1. Para começar, cadastre-se usando o link do site. <a href='https://1wprru.life/?open=register#yrs1' style='text-decoration:none'>1WIN (CLICK)</a>\n"
                               "🟡 2. Após o cadastro bem sucedido, copie seu ID no site (aba ‘Reabastecimento’ e seu ID estará no canto superior direito).\n"
                               "🟡 3. E envie para o bot em resposta a esta mensagem!",
