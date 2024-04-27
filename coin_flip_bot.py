@@ -63,11 +63,10 @@ async def callback_inline(call):
         get_signal_button = types.InlineKeyboardButton(text="🪙 Atirar uma moeda 🪙", callback_data="get_signal")
         keyboard.add(register_button, instruction_button, get_signal_button)
         await bot.delete_message(chat_id=call.message.chat.id, message_id=call.message.id)
-        await bot.send_message(chat_id=call.message.chat.id, text="Bem-vindo ao 🔸Brawl Bot🔸!\n\n"
-                                                                  "💀Brawl Pirates é um jogo da casa de apostas 1win, que se baseia na escolha de “Skull”.\n"
-                                                                  "Neste jogo, os usuários poderão tentar a sorte e encontrar tesouros piratas, ganhando assim dinheiro real.\n\n\n"
-                                                                  "O jogo convida todos a escolher uma das três caveiras e adivinhar qual delas contém o tesouro. Nosso bot é baseado na rede neural CLAUD-3.\n"
-                                                                  "Ele pode prever o resultado com 97% de probabilidade.",
+        await bot.send_message(chat_id=call.message.chat.id, text="Bem-vindo ao 🟡YE KAZINO COIN FLIP🟡!\n"
+                               "🪙 Coin Flip é um jogo que recria o processo de lançamento de uma moeda, pedindo ao jogador que escolha entre cara e coroa."
+                               "Se você adivinhar com sucesso o lado da moeda, o jogador pode esperar uma vitória na faixa de x1,1 a x2000. Se aparecer o BANCO, o jogador pode ganhar um jackpot de até 240.000 moedas!"
+                               "Nosso jogo é desenvolvido utilizando tecnologias avançadas da inteligência artificial BitsGap, proporcionando uma análise única do jogo e uma sensação de presença como uma moeda no processo Coin Flip.",
                          reply_markup=keyboard
                          )
 
